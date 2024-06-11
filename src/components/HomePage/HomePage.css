@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
-* {
+ * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,7 +17,7 @@
     overflow: hidden;
     margin: 0 auto;
   }
-
+  
   .movietitle {
     position: absolute;
     padding-top: 40px;
@@ -49,9 +47,8 @@
     background: linear-gradient(90deg, rgba(210,13,13,1) 25%, rgba(0,212,255,0) 65%);
     pointer-events: none; 
   }
-
-
-    .btn{
+  
+  .btn {
     font-weight: 500;
     font-size: 24px;
     color: #ffffff;
@@ -60,7 +57,7 @@
     border: solid #ffffff 2px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     border-radius: 1px;
-    transition : 892ms;
+    transition: 892ms;
     transform: translateY(0);
     display: flex;
     flex-direction: row;
@@ -71,77 +68,114 @@
     position: absolute;
     margin-left: 200px;
     bottom: 50px;
-    }
-
-    .btn:hover{
-
-    transition : 892ms;
+  }
+  
+  .btn:hover {
+    transition: 892ms;
     padding: 10px 30px;
-    transform : translateY(-5px);
+    transform: translateY(-5px);
     background-color: #ffffff00;
     color: #ffffff;
     border: solid 2px #ffffff;
-    }
+  }
+  
+  .films {
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+  
+  .films h1 {
+    font-weight: 300;
+    font-size: 40px;
+  }
+  
+  .subfilms {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+  
+  .subfilms h3 {
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
+    position: relative; /* Relative positioning for the pseudo-element */
+  }
+  
+  .subfilms h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust the position of the bar */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: bottom right;
+  }
+  
+  .subfilms h3:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .movieposter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+    flex-direction: row;
+  }
+  
+  .movieposter {
+    max-width: 245px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movieinfos {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000; /* Adjust text color as needed */
+  }
 
-    .films {
-        margin-top: 150px;
-        margin-left: 200px;
-    }
+  .movieposter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imgposter-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    transition: height 0.3s; 
+  }
+  
+  .movieposter-wrapper:hover .movieposter-overlay {
+    height: 100%;
+  }
+  
 
-    .films h1 {
-        font-weight: 300;
-        font-size: 40px;
-    }
-
-    .subfilms {
-        display: flex;
-        flex-direction: row;
-        gap: 60px;
-    }
-
-    .subfilms h3 {
-        margin-top: 50px;
-        text-align: center;
-        align-items: center;
-        font-weight: 400;
-        position: relative; /* Relative positioning for the pseudo-element */
-    }
-    
-    .subfilms h3::after {
-        content: '';
-        position: absolute;
-        bottom: -10px; /* Adjust the position of the bar */
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: red;
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-        transform-origin: bottom right;
-    }
-    
-    .subfilms h3:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-
-    .movieposter-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        margin-top: 50px;
-    }
-    
-    .movieposter {
-        max-width: 245px;
-        height: auto;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .movieinfos {
-        margin-top: 10px;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 400;
-        color: #000000; /* Adjust text color as needed */
-    }
+  .movieinfos-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .moviet {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000; /* Adjust text color as needed */
+  }

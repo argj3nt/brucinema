@@ -22,21 +22,28 @@ const HomePage = () => {
         </div>
 
         <div className='movieposter-container'>
-          <div>
+          <div className="movieposter-wrapper">
+            <div className="movieposter-overlay"></div>
             <img src={Poster} alt="poster" className='movieposter' />
-            <h2 className='movieinfos'>Peaky Blinders</h2>
+            <p className='moviet'>Peaky Blinders</p>
           </div>
-          <div>
+
+          <div className="movieposter-wrapper">
+            <div className="movieposter-overlay"></div>
             <img src={Poster} alt="poster" className='movieposter' />
-            <h2 className='movieinfos'>Peaky Blinders</h2>
+            <p className='moviet'>Peaky Blinders</p>
           </div>
-          <div>
+
+          <div className="movieposter-wrapper">
+            <div className="movieposter-overlay"></div>
             <img src={Poster} alt="poster" className='movieposter' />
-            <h2 className='movieinfos'>Peaky Blinders</h2>
+            <p className='moviet'>Peaky Blinders</p>
           </div>
-          <div>
+
+          <div className="movieposter-wrapper">
+            <div className="movieposter-overlay"></div>
             <img src={Poster} alt="poster" className='movieposter' />
-            <h2 className='movieinfos'>Peaky Blinders</h2>
+            <p className='moviet'>Peaky Blinders</p>
           </div>
         </div>
       </div>
