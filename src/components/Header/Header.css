@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+.mainheader {
+  background-color: #DD1C1A;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  margin-left: 195px;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Utilisation de gap pour l'espacement entre les éléments */
+  color: rgb(255, 255, 255);
+}
+
+.header li {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.1s ease;
+}
+
+.header li:hover {
+  color: #3a1312;
+  transform: scale(1.1);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover .icon {
+  color: #3a1312;
+}
+
+
+
+
+.smainheader {
+  background-color: #f5f5f2;
+  text-align: left;
+  /* padding: 10px 20px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sheader ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+  color: #d20a0d;
+  margin-right: 800px;
+}
+
+.sheader li {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.1s ease;
+}
+
+.sheader li:hover {
+  color: #af0000;
+  transform: scale(1.1);
+}
+
+.snav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
