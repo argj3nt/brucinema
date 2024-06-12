@@ -1,4 +1,4 @@
- * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,14 +6,14 @@
   }
   
   .mainhomepage {
-    text-align: center; 
+    text-align: center;
   }
   
   .image-container {
     position: relative;
     width: 100%;
     max-width: 1700px;
-    height: 440px; 
+    height: 440px;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -34,7 +34,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top; 
+    object-position: top;
   }
   
   .image-container::after {
@@ -45,7 +45,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, rgba(210,13,13,1) 25%, rgba(0,212,255,0) 65%);
-    pointer-events: none; 
+    pointer-events: none;
   }
   
   .btn {
@@ -73,7 +73,7 @@
   .btn:hover {
     transition: 892ms;
     padding: 10px 30px;
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     background-color: #ffffff00;
     color: #ffffff;
     border: solid 2px #ffffff;
@@ -100,13 +100,13 @@
     text-align: center;
     align-items: center;
     font-weight: 400;
-    position: relative; /* Relative positioning for the pseudo-element */
+    position: relative;
   }
   
   .subfilms h3::after {
     content: '';
     position: absolute;
-    bottom: -10px; /* Adjust the position of the bar */
+    bottom: -10px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -129,53 +129,161 @@
     flex-direction: row;
   }
   
-  .movieposter {
+  .movieposter-wrapper {
+    position: relative;
     max-width: 245px;
+    text-align: center; 
+  }
+  
+  .movieposter-image-wrapper {
+    position: relative; 
+  }
+  
+  .movieposter {
+    width: 100%;
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .movieinfos {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    color: #000000; /* Adjust text color as needed */
-  }
-
-  .movieposter-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .imgposter-overlay {
+  .movieposter-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    transition: height 0.3s; 
-  }
-  
-  .movieposter-wrapper:hover .movieposter-overlay {
-    height: 100%;
-  }
-  
-
-  .movieinfos-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: linear-gradient(transparent, rgba(1, 1, 1, 1));
+    transition: height 0.3s;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+  }
+  
+  .movieposter-image-wrapper:hover .movieposter-overlay {
+    height: 100%;
   }
   
   .moviet {
     margin-top: 10px;
-    text-align: center;
     font-size: 18px;
     font-weight: 400;
-    color: #000000; /* Adjust text color as needed */
+    color: #000000;
+    z-index: 2; /* Set a higher z-index for the text */
+  }
+  
+  .movie-description {
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .movieposter-image-wrapper:hover .movie-description {
+    opacity: 1;
+  }
+  
+  .btn2 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ffffff00;
+    padding: 8px 24px;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 1px;
+    transition: 892ms;
+    transform: translateY(0);
+    
+    
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* z-index: 1; */
+    /* position: absolute; */
+  }
+  
+  .btn2:hover {
+    transition: 892ms;
+    padding: 10px 30px;
+    transform: translateY(-5px);
+    background-color: #ffffff00;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+  }
+
+  .newsletter {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DD1C1A;
+    color: white;
+  }
+  
+  .newstitle {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    padding: 20px 20px;
+    font-size: 40px;
+  }
+
+  .newsletter > p {
+    font-size: 18px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  
+  .email-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #00000000;
+    outline: none;
+    width: 400px;
+  }
+
+  .email-input::placeholder {
+    color: #ffffff93;
+  }
+
+  .subscribe-btn {
+    background-color: #DD1C1A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #A50D0B;
+  }
+
+  .email-input:not(:placeholder-shown) {
+    color: #ffffff; /* Text color when input is not empty */
+  }
+
+  .infonewsletter {
+    margin-bottom: 15px;
   }
