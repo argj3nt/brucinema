@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import MovieImage from '../../assets/furiosa.jpg';
 import Poster from '../../assets/peaky.jpg';
 import './HomePage.css';
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 const HomePage = () => {
   const carouselRef = useRef(null);
@@ -51,7 +52,7 @@ const HomePage = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <div className='mainhomepage'>
         <div className='image-container'>
           <h1 className='movietitle'>Furiosa</h1>
@@ -67,10 +68,11 @@ const HomePage = () => {
           <h3 className='categorys'>À L'AFFICHE</h3>
         </div>
 
+
         <div className='carousel-container'>
-          <button className='scroll-btn left' onClick={scrollLeftBtn}>&lt;</button>
-          <div 
-            className='movieposter-container' 
+          <button className='scroll-btn left' onClick={scrollLeftBtn}><FaAngleLeft className='faricon' /></button>
+          <div
+            className='movieposter-container'
             ref={carouselRef}
             onMouseDown={handleMouseDown}
             onMouseLeave={handleMouseLeave}
@@ -91,9 +93,10 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-          <button className='scroll-btn right' onClick={scrollRightBtn}>&gt;</button>
-        </div>  
+          <button className='scroll-btn right' onClick={scrollRightBtn}><FaAngleRight className='faricon' /></button>
+        </div>
       </div>
+
 
       <div className='newsletter'>
         <h1 className='newstitle'>INSCRIVEZ-VOUS DÈS MAINTENANT !</h1>
@@ -118,7 +121,7 @@ const HomePage = () => {
           <li>COOKIES</li>
         </ul>
       </footer>
-    </>
+    </div>
   );
 }
 
