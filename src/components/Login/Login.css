@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginforms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0% auto;
+    gap: 10px;
+}
+
+.loginform {
+    margin: 0% auto;
+    width: 500px;
+}
+
+.loginbtn {
+    margin-left: 420px;
+    margin-right: 420px;
+}

@@ -3,6 +3,7 @@ import './Cinema.css';
 import Cinepic from '../../assets/cinema.png';
 import { FaCcApplePay, FaCreditCard } from "react-icons/fa";
 
+
 const Cinema = () => {
   const [activeCityIndex, setActiveCityIndex] = useState(null);
   const [activeDateIndex, setActiveDateIndex] = useState(null);

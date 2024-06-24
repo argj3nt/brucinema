@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.regcontain {
+    background-color: #DD1C1A;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1000px;
+    margin: 1% auto;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infonewsletter {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.cobli {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.5); 
+}
+
+label {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: '\2713';
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.alert-message {
+    color: white;
+    padding-bottom: 25px;
+}
