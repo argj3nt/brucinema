@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cinelist {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    margin-left: 270px; 
+    margin-top: 50px; 
+}
+
+.cinefile {
+    width: 400px; /* Adjust width as needed */
+    height: auto; /* Allow height to adjust based on the aspect ratio */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    clip-path: inset(0 20px 0 20px); /* Crop 20px from the left and right sides */
+    border-radius: 10px; /* Apply a border radius */
+}
+
+.h3cine {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    font-size: 16px;
+}
+
+.cine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 50px; */
+}
+
+.city-list {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    padding: 0;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.city-list li {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.city-list li:hover {
+    transform: scale(1.1);
+    color: #DD1C1A;
+}
+
+.city-list li.active {
+    color: #DD1C1A;
+    border-bottom: 2px solid #DD1C1A;
+}
+
+.date-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; 
+    padding: 0;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.date-list li {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.date-list li:hover {
+    transform: scale(1.1);
+    color: #DD1C1A;
+}
+
+.date-list li.active {
+    color: #DD1C1A;
+    border-bottom: 2px solid #DD1C1A;
+}
+
+.seanceinfo {
+    margin-left: 10px;
+    padding-top: 0px;
+}
+
+.bruevere {
+    font-weight: 400;
+}
+
+.salles {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.iofcinema {
+    margin-top: 50px;
+}
+
+.cineicon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.showtimes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.showtime-box {
+    background-color: #DD1C1A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD1C1A;
+    padding: 20px;
+    color: white;
+    margin-top: 200px;
+  }
+  
+  .foot ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  
+  .foot li {
+    margin: 10px 15px;
+    white-space: nowrap;
+  }
+  

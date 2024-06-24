@@ -145,6 +145,8 @@
   padding: 10px 0;
   max-width: 100%;
   max-height: 100%;
+  display: flex;
+    overflow-x: hidden; /* Masquer la barre de défilement horizontale */
 }
 
 .scroll-btn {
@@ -347,7 +349,7 @@
   font-weight: 300;
 }
 
-.foot {
+/* .foot {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -369,4 +371,4 @@
 .foot li {
   margin: 10px 15px;
   white-space: nowrap;
-}
+} */

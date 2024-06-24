@@ -95,6 +95,7 @@ const HomePage = () => {
           </div>
           <button className='scroll-btn right' onClick={scrollRightBtn}><FaAngleRight className='faricon' /></button>
         </div>
+        
       </div>
 
 
@@ -108,7 +109,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <footer className='foot'>
+      {/* <footer className='foot'>
         <ul>
           <li>BESOIN D'AIDE ?</li>
           <li>CONTACT</li>
@@ -120,7 +121,7 @@ const HomePage = () => {
           <li>MENTIONS LÉGALES</li>
           <li>COOKIES</li>
         </ul>
-      </footer>
+      </footer> */}
     </div>
   );
 }
