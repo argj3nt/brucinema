@@ -5,11 +5,13 @@ import Login from '../Login/Login';
 import Register from '../Register/Register';
 import BeforeTicket from '../BeforeTicket/BeforeTicket';
 import { IoTicket } from "react-icons/io5";
+import Tarifs from '../Tarifs/Tarifs';
 
 
 const Checkout = () => {
 
   return (
+    <>
     <div className='maincheckout'>
       <h1 className='checkouttitle'>BRUCINEMA</h1>
       <div className='filmprevcheck'>
@@ -22,12 +24,10 @@ const Checkout = () => {
           </div>
         </div>
       </div>
-      <div className='tarifsprice'>
-        <h1 className='h3tarif'>TARIFS<IoTicket className='ticketicon' /></h1>
-        
-      </div>
-      <hr className='red-underline'></hr>
     </div>
+
+    <Tarifs />
+    </>
   );
 };
 

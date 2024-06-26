@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tarifsprice {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.tarifsprice {
+    padding: 20px;
+}
+
+.h3tarif {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.ticketicon {
+    margin-left: 10px;
+}
+
+.red-underline {
+    border: none;
+    height: 2px;
+    background-color: #DD1C1A;
+    margin-bottom: 70px;
+}
+
+.ticket-option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.ticket-option h2 {
+    flex: 1;
+}
+
+.ticket-option button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.summary h2 {
+    font-size: 22px;
+}
+
+.summary p {
+    font-size: 20px;
+}
+
+.summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.summary ul li {
+    font-size: 18px;
+}
+
+.summary {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0% auto;
+    background-color: #f2f2f2;
+    margin-bottom: 100px;
+}
+
+.finalprice {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #DD1C1A;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.totaltopay {
+    margin: 0;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    color: #DD1C1A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #d7d7d7;
+    color: #DD1C1A;
+}
