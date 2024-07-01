@@ -43,7 +43,7 @@ const Tarifs = () => {
     <>
       <div className='tarifsprice'>
         <h1 className='h3tarif'>
-          TARIFS<IoTicket className='ticketicon' style={{ fill: 'none', stroke: 'black', strokeWidth: 14 }} />
+          TARIFS
         </h1>
       </div>
       <hr className='red-underline'></hr>

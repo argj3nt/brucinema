@@ -6,6 +6,7 @@ import Register from '../Register/Register';
 import BeforeTicket from '../BeforeTicket/BeforeTicket';
 import { IoTicket } from "react-icons/io5";
 import Tarifs from '../Tarifs/Tarifs';
+import Payment from '../Payment/Payment';
 
 
 const Checkout = () => {
@@ -26,6 +27,7 @@ const Checkout = () => {
       </div>
     </div>
 
+    <Payment />
     <Tarifs />
     </>
   );

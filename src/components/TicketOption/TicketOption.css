@@ -22,13 +22,14 @@
 .h2ticket {
     flex: 1;
     font-size: 18px;
+    font-weight: 300;
     color: #333;
     margin-right: 15px;
     transition: color 0.3s;
 }
 
 .h2ticket:hover {
-    color: #DD1C1A;
+    color: #310100;
 }
 
 .buttticket {

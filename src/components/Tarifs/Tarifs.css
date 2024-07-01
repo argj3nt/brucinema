@@ -8,10 +8,8 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
-}
-
-.tarifsprice {
     padding: 20px;
+    
 }
 
 .h3tarif {
@@ -75,6 +73,8 @@
     margin: 0% auto;
     background-color: #f2f2f2;
     margin-bottom: 100px;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .finalprice {
