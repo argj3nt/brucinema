@@ -1,13 +1,17 @@
 import React from 'react';
 import './Header.css';
 import { FiSearch, FiUser, FiUsers, FiBriefcase, FiUmbrella } from "react-icons/fi";
+import { Link } from 'react-router-dom';
+import HomePage from '../HomePage/HomePage';
 
 const Header = () => {
   return (
     <>
       <div className='mainheader'>
         <div className='header'>
-          <div className='title'>BRUCINEMA</div>
+          
+          <Link to="/" className='title'>BRUCINEMA</Link>
+      
           <ul>
             <li className='nav-item'><FiSearch className='icon' />RECHERCHER</li>
             <li className='nav-item'><FiUser className='icon' />MON COMPTE</li>

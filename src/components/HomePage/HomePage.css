@@ -81,7 +81,7 @@
 
 .films {
   margin-top: 150px;
-  margin-left: 200px;
+  /* margin-left: 200px; */
 }
 
 .films h1 {
@@ -89,10 +89,15 @@
   font-size: 40px;
 }
 
+.filmstitle {
+  margin-left: 200px; /*ICI LA MODIF */
+}
+
 .subfilms {
   display: flex;
   flex-direction: row;
   gap: 60px;
+  margin-left: 200PX;
 }
 
 .subfilms h3 {
@@ -128,9 +133,10 @@
   justify-content: center;
   overflow: hidden;
   margin-top: 50px;
-  width: 100%;
+  /* max-width: 2800px; */
   height: 400px; /* Adjust height as needed */
-  
+  margin-left: 140PX;
+  margin-right: 160PX;
 }
 
 .infonewsletter {
@@ -143,10 +149,10 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 10px 0;
-  max-width: 100%;
-  max-height: 100%;
+  /* max-width: 100%; */
+  /* max-height: 100%; AJOUTE LA BARRE A DROITE */
   display: flex;
-    overflow-x: hidden; /* Masquer la barre de défilement horizontale */
+    overflow-x: hidden;
 }
 
 .scroll-btn {
@@ -158,17 +164,13 @@
   z-index: 2;
   border-radius: 75%;
   /* margin-left: -50px; */
-  margin-right: 200px;
+  /* margin-right: 200px; */
 }
 
 .scroll-btn.left {
   margin-right: auto;
   
 } 
-
-.scroll-btn.right {
-  margin-left: auto;
-}
 
 .faricon {
   font-size: 40px;
@@ -248,6 +250,10 @@
   align-items: center;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.categorys {
+  cursor: pointer;
 }
 
 .btn2:hover {

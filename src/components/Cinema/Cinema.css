@@ -113,9 +113,15 @@
     display: flex;
     gap: 10px;
     margin-top: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 .showtime-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
     background-color: #DD1C1A;
     color: white;
     padding: 10px 20px;
@@ -123,4 +129,11 @@
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    text-decoration: none; /* Remove default underline */
 }
+
+.showtime-box a {
+    text-decoration: none; /* Remove underline specifically for links */
+    color: white; /* Ensure link text color is white */
+}
+

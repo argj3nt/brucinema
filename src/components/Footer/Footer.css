@@ -26,5 +26,11 @@
   .foot li {
     margin: 10px 15px;
     white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .foot li:hover {
+    /* font-size: 18px; */
+    color: #f2f2f2;
   }
   

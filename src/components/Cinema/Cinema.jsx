@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Cinema.css';
 import Cinepic from '../../assets/cinema.png';
 import { FaCcApplePay, FaCreditCard } from "react-icons/fa";
+import Checkout from '../Checkout/Checkout';
+import { Link } from 'react-router-dom';
 
 
 const Cinema = () => {
@@ -73,10 +75,33 @@ const Cinema = () => {
           </div>
 
           <div className='showtimes'>
-            <div className='showtime-box'>14:00</div>
-            <div className='showtime-box'>16:30</div>
-            <div className='showtime-box'>19:00</div>
-            <div className='showtime-box'>21:30</div>
+          <div className='showtimes'>
+            <div className='showtime-box'><Link to="/checkout">14:00</Link></div>
+            <div className='showtime-box'><Link to="/checkout">18:00</Link></div>
+            <div className='showtime-box'><Link to="/checkout">19:30</Link></div>
+            <div className='showtime-box'><Link to="/checkout">22:00</Link></div>
+          </div>
+      </div>
+
+        </div>
+      </div>
+      <div className='cinelist'>
+        <img src={Cinepic} alt="cinema" className='cinefile' />
+        <div className='seanceinfo'>
+          <h2 className='bruevere'>BRUCINEMA EVERE</h2>
+          <div className='iofcinema'>
+            <h4 className='salles'>22 salles I Parking Privé</h4>
+            <h4 className='salles'>Rue Saint-Vincent 17 <br/>1140 BRUXELLES</h4>
+            <p className='cineicon'>
+              <FaCcApplePay className='cineicon'/><FaCreditCard className='cineicon' />
+            </p>
+          </div>
+
+          <div className='showtimes'>
+          <div className='showtime-box'><Link to="/checkout">14:00</Link></div>
+            <div className='showtime-box'><Link to="/checkout">18:00</Link></div>
+            <div className='showtime-box'><Link to="/checkout">19:30</Link></div>
+            <div className='showtime-box'><Link to="/checkout">22:00</Link></div>
           </div>
 
         </div>
@@ -94,31 +119,10 @@ const Cinema = () => {
           </div>
 
           <div className='showtimes'>
-            <div className='showtime-box'>14:00</div>
-            <div className='showtime-box'>16:30</div>
-            <div className='showtime-box'>19:00</div>
-            <div className='showtime-box'>21:30</div>
-          </div>
-
-        </div>
-      </div>
-      <div className='cinelist'>
-        <img src={Cinepic} alt="cinema" className='cinefile' />
-        <div className='seanceinfo'>
-          <h2 className='bruevere'>BRUCINEMA EVERE</h2>
-          <div className='iofcinema'>
-            <h4 className='salles'>22 salles I Parking Privé</h4>
-            <h4 className='salles'>Rue Saint-Vincent 17 <br/>1140 BRUXELLES</h4>
-            <p className='cineicon'>
-              <FaCcApplePay className='cineicon'/><FaCreditCard className='cineicon' />
-            </p>
-          </div>
-
-          <div className='showtimes'>
-            <div className='showtime-box'>14:00</div>
-            <div className='showtime-box'>16:30</div>
-            <div className='showtime-box'>19:00</div>
-            <div className='showtime-box'>21:30</div>
+          <div className='showtime-box'><Link to="/checkout">14:00</Link></div>
+            <div className='showtime-box'><Link to="/checkout">18:00</Link></div>
+            <div className='showtime-box'><Link to="/checkout">19:30</Link></div>
+            <div className='showtime-box'><Link to="/checkout">22:00</Link></div>
           </div>
 
         </div>
