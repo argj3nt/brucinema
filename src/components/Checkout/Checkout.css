@@ -5,6 +5,8 @@
 }
 
 .checkouttitle {
+    text-decoration: none;
+    margin-bottom: 50px;
     display: flex;
     margin-top: 15px;
     justify-content: center;

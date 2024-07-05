@@ -5,6 +5,7 @@ import Cinema from '../Cinema/Cinema';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
 import MovieCarousel from '../MovieCarousel/MovieCarousel';
+import Checkout from '../Checkout/Checkout';
 
 const MoviePage = () => {
   const { movieId } = useParams();
@@ -44,46 +45,6 @@ const MoviePage = () => {
     return <p>Error loading movie information</p>;
   }
 
-  const scrollLeftBtn = () => {
-    carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-  };
-
-  const scrollRightBtn = () => {
-    carouselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-  };
-
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    setStartX(e.pageX - carouselRef.current.offsetLeft);
-    setScrollLeft(carouselRef.current.scrollLeft);
-  };
-
-  const handleMouseLeave = () => {
-    setIsDragging(false);
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const handleMouseMove = (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    const x = e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    carouselRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const handleTouchStart = (e) => {
-    setStartX(e.touches[0].pageX - carouselRef.current.offsetLeft);
-    setScrollLeft(carouselRef.current.scrollLeft);
-  };
-
-  const handleTouchMove = (e) => {
-    const x = e.touches[0].pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    carouselRef.current.scrollLeft = scrollLeft - walk;
-  };
 
   const { original_title, poster_path, release_date, status, overview, genres, production_companies } = movieInfo;
 
@@ -147,6 +108,12 @@ const MoviePage = () => {
           <button className="subscribe-btn">JE M'ABONNE</button>
           <p className='cobli'>* Champ obligatoire</p>
         </div>
+        {/* <Checkout
+      movieTitle={movieInfo.original_title}
+      posterPath={movieInfo.poster_path}
+      cinemaName="BRUCINEMA EVERE"
+      salle="Salle 12"
+    /> */}
       </div>
     </>
   );
