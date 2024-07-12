@@ -88,20 +88,20 @@ const Cinema = () => {
       <div className='cinelist'>
         <img src={Cinepic} alt="cinema" className='cinefile' />
         <div className='seanceinfo'>
-          <h2 className='bruevere'>BRUCINEMA EVERE</h2>
+          <h2 className='bruevere'>BRUCINEMA DOCKS</h2>
           <div className='iofcinema'>
-            <h4 className='salles'>22 salles I Parking Privé</h4>
-            <h4 className='salles'>Rue Saint-Vincent 17 <br/>1140 BRUXELLES</h4>
+            <h4 className='salles'>28 salles I Parking Privé</h4>
+            <h4 className='salles'>Bd Lambermont 1<br/>1000 BRUXELLES</h4>
             <p className='cineicon'>
               <FaCcApplePay className='cineicon'/><FaCreditCard className='cineicon' />
             </p>
           </div>
 
           <div className='showtimes'>
-          <div className='showtime-box'><Link to="/checkout">14:00</Link></div>
-            <div className='showtime-box'><Link to="/checkout">18:00</Link></div>
-            <div className='showtime-box'><Link to="/checkout">19:30</Link></div>
-            <div className='showtime-box'><Link to="/checkout">22:00</Link></div>
+          <div className='showtime-box'><Link to="/checkout">13:50</Link></div>
+            <div className='showtime-box'><Link to="/checkout">17:00</Link></div>
+            <div className='showtime-box'><Link to="/checkout">19:00</Link></div>
+            <div className='showtime-box'><Link to="/checkout">21:45</Link></div>
           </div>
 
         </div>
@@ -109,20 +109,20 @@ const Cinema = () => {
       <div className='cinelist'>
         <img src={Cinepic} alt="cinema" className='cinefile' />
         <div className='seanceinfo'>
-          <h2 className='bruevere'>BRUCINEMA EVERE</h2>
+          <h2 className='bruevere'>BRUCINEMA CITY 2</h2>
           <div className='iofcinema'>
-            <h4 className='salles'>22 salles I Parking Privé</h4>
-            <h4 className='salles'>Rue Saint-Vincent 17 <br/>1140 BRUXELLES</h4>
+            <h4 className='salles'>14 salles</h4>
+            <h4 className='salles'>Rue Neuve 123 <br/>1000 BRUXELLES</h4>
             <p className='cineicon'>
               <FaCcApplePay className='cineicon'/><FaCreditCard className='cineicon' />
             </p>
           </div>
 
           <div className='showtimes'>
-          <div className='showtime-box'><Link to="/checkout">14:00</Link></div>
-            <div className='showtime-box'><Link to="/checkout">18:00</Link></div>
-            <div className='showtime-box'><Link to="/checkout">19:30</Link></div>
-            <div className='showtime-box'><Link to="/checkout">22:00</Link></div>
+          <div className='showtime-box'><Link to="/checkout">14:45</Link></div>
+            <div className='showtime-box'><Link to="/checkout">16:30</Link></div>
+            <div className='showtime-box'><Link to="/checkout">18:20</Link></div>
+            <div className='showtime-box'><Link to="/checkout">21:50</Link></div>
           </div>
 
         </div>
